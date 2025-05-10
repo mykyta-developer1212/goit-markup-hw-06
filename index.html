@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="css/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Roboto', sans-serif;">
+    <!--Шапка сайту-->
+    <header class="header-stn">
+        <div class="header-container container">
+        <!--Навігація шапки-->
+        <nav class="header-nav">
+            <!--Групування логотипу-->
+            <a href="./index.html" class="wrapper-logo logo">Web<span class="studio-color">Studio</span></a>
+            <!--Невпорядкований список навігації-->
+            <ul class="ul-header">
+                <li><a href="./index.html" class="std">Studio</a></li>
+                <li><a class="std-two">Portfolio</a></li>
+                <li><a class="std-two">Contacts</a></li>
+            </ul>
+        </nav>
+    
+        <!--Групування контактних даних-->
+        <address class="contacts-info">
+            <ul class="ul-address">
+                <!--Перший пункт контактних даних з email-->
+                <li><a href="mailto:info@devstudio.com" class="a-href">info@devstudio.com</a></li>
+                <!--Другий пункт контактних даних з телефоном без пробілів-->
+                <li><a href="tel:+110001111111" class="a-href">+11 (000) 111-11-11</a></li>
+            </ul>
+        </address>
+        <button class="burger-btn" type="button">
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/sprite_burger.svg#icon-burger"></use>
+            </svg>
+        </button>
+
+        <div class="menu-window-container">
+            <div class="menu-window">
+                <button class="btn-menu-window" type="button">
+                    <svg class="svg-btn-menu-window" width="8" height="8">
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+            </div>
+            <p class="prgf-modal-window">Leave your contacts and we will call you back</p>
+            <form>
+                <div class="input-wrapper">
+                    <label class="label-name" for="user-name">Name</label>
+                    <div class="icons-input-container">
+                        <input class="input-element" id="user-name" name="user-name" type="text">
+                        <svg class="svg-icons-input" width="18" height="24">
+                           <use href="./images/symbol-defs.svg#icon-user"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label class="label-name">Phone</label>
+                    <div class="icons-input-container">
+                        <input class="input-element" id="user-name-3" name="user-name" type="text">
+                        <svg class="svg-icons-input" width="18" height="24">
+                          <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label class="label-name">Email</label>
+                    <div class="icons-input-container">
+                        <input class="input-element" id="user-name-4" name="user-name" type="text">
+                        <svg class="svg-icons-input" width="18" height="24">
+                           <use href="./images/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="comment-wrapper">
+                    <label class="label-name" for="user-comment">Comment</label>
+                    <textarea class="textarea-comment" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+                </div>
+                <div class="label-wrapper"> 
+                    <input class="input-privacy visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy">
+                    <label class="label-user-privacy" for="user-privacy">
+                    <span class="span-label">
+                        <svg class="privpolicy" width="10" height="8">
+                          <use href="./images/daw_sprite.svg#icon-daw"></use>
+                        </svg>
+                    </span>I accept the terms and conditions of the
+                        <a class="label-link">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="form-btn">Send</button>
+            </form>
+    </header>
+    
+
+    <!--Cекція з основним контентом-->
+    <main>
+    <!-- Секція з інформацією замовленням послуги-->
+    <section class="stn-one stn-eff">
+    <div class="stn-one-container container">
+    <!--Головний заголовок-->
+     <h1 class="level-one">Effective Solutions<br>for Your Business</br></h1>
+    <!-- Кнопка для послуг-->
+    <button type="button" class="btn">Order Service</button>
+    </div>
+    </section>
+
+    <!--Секція з якостями-->
+    <section class="stn-two">
+        <div class="stn-two-container container">
+       <!-- Заголовок h2 -->
+       <h2 class="level-two visually-hidden">Our Features</h2>
+        <!--Список особливостей-->
+        <ul class="two-ul-list">
+        <!--Елемент стратегія-->
+         <li class="qualities-info one-stn">
+            <div class="icon-container">
+                <svg width="64" height="64">
+                    <use href="./images/icons.svg#icon-antenna"></use>  
+                </svg>
+            </div>
+            <h3 class="level-three-stn-two">Strategy</h3>
+            <p class="stn-two-p">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+        </li>
+
+        <!--Елемент комунікабельність-->
+        <li class="qualities-info one-stn">
+            <div class="icon-container">
+                <svg width="64" height="64">
+                    <use href="./images/icons.svg#icon-clock"></use>  
+                </svg>
+            </div>
+            <h3 class="level-three-stn-two">Punctuality</h3>
+            <p class="stn-two-p">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+        </li>
+
+         <!--Елемент аналіз-->
+        <li class="qualities-info two-stn">
+            <div class="icon-container">
+                <svg width="64" height="64">
+                    <use href="./images/icons.svg#icon-diagram"></use>  
+                </svg>
+            </div>
+            <h3 class="level-three-stn-two">Diligence</h3>
+            <p class="stn-two-p">Research and confirm brands with the strongest digital growth opportunities and minimize risk.</p>
+        </li>
+
+        <!--Елемент технології-->
+        <li class="qualities-info two-stn">
+            <div class="icon-container">
+                <svg width="64" height="64">
+                    <use href="./images/icons.svg#icon-astronaut"></use>  
+                </svg>
+            </div>
+            <h3 class="level-three-stn-two">Technologies</h3>
+            <p class="stn-two-p">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+        </li>
+    </ul>
+        </div>
+    </section>
+ 
+     <!--Cекція з командою-->
+     <section class="develops-info">
+       <div class="stn-three-container container">
+         <h2 class="level-two-stn-three">Our Team</h2>
+         <!--Елемент з членом команди 1-->
+         <ul class="workers-info works">
+           <li class="elements-stn-three">
+            <img src="./images/Product_Designer.jpg" alt="Product Designer" width="264" class="photo-workers">
+          <div class="workers-container">
+            <h3 class="level-three-stn-on">Mark Guerrero</h3>
+            <p class="prgf-stn-three">Product Designer</p>
+            <ul class="svg-list">
+                <li class="li-svg">
+                <a class="a-svg" href="https://www.instagram.com/">
+                   <svg class="svg-logo" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-logo"></use>  
+                   </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://x.com/?lang=uk">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter-logo"></use>  
+                    </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://www.facebook.com/?locale2=uk_UA&_rdr">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook-logo"></use>  
+                    </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://ua.linkedin.com/">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-in-logo"></use>  
+                    </svg>  
+                </a>
+                </li>
+            </ul>
+          </div>
+          </li>
+         <!--Елемент з членом команди 2-->
+         <li class="elements-stn-three">
+            <img src="./images/Frontend_Developer.jpg"  alt="Frontend Developer" width="264" class="photo-workers">
+        <div class="workers-container">
+            <h3 class="level-three-stn-on">Tom Ford</h3>
+            <p class="prgf-stn-three">Frontend Developer</p>
+            <ul class="svg-list">
+                <li class="li-svg">
+                <a class="a-svg" href="https://www.instagram.com/">
+                   <svg class="svg-logo" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-logo"></use>  
+                   </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://x.com/?lang=uk">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter-logo"></use>  
+                    </svg>
+                </a>
+                </li>
+                <li class="li-svg"> 
+                <a class="a-svg" href="https://www.facebook.com/?locale2=uk_UA&_rdr">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook-logo"></use>  
+                    </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://ua.linkedin.com/">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-in-logo"></use>  
+                    </svg>  
+                </a>
+                </li>
+            </ul>
+            </div>
+        </li>
+         <!--Елемент з членом команди 3-->
+         <li class="elements-stn-three">
+            <img src="./images/Marketing.jpg" alt="Marketing" width="264" class="photo-workers">
+        <div class="workers-container">
+            <h3 class="level-three-stn-on">Camila Garcia</h3>
+            <p class="prgf-stn-three">Marketing</p>
+            <ul class="svg-list">
+                <li class="li-svg">
+                <a class="a-svg" href="https://www.instagram.com/">
+                   <svg class="svg-logo" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-logo"></use>  
+                   </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://x.com/?lang=uk">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter-logo"></use>  
+                    </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://www.facebook.com/?locale2=uk_UA&_rdr">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook-logo"></use>  
+                    </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://ua.linkedin.com/">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-in-logo"></use>  
+                    </svg>  
+                </a>
+                </li>
+            </ul>
+        </div>
+        </li>
+          <!--Елемент з членом команди 4-->
+        <li class="elements-stn-three">
+            <img src="./images/UI_Designer.jpg" alt="UI Designer" width="264" class="photo-workers">
+         <div class="workers-container">
+            <h3 class="level-three-stn-on">Daniel Wilson</h3>
+            <p class="prgf-stn-three">UI Designer</p>
+            <ul class="svg-list">
+                <li class="li-svg">
+                <a class="a-svg" href="https://www.instagram.com/">
+                   <svg class="svg-logo" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-logo"></use>  
+                   </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://x.com/?lang=uk">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter-logo"></use>  
+                    </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://www.facebook.com/?locale2=uk_UA&_rdr">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook-logo"></use>  
+                    </svg>
+                </a>
+                </li>
+                <li class="li-svg">
+                <a class="a-svg" href="https://ua.linkedin.com/">
+                    <svg class="svg-logo" width="16" height="16">
+                        <use href="./images/icons.svg#icon-in-logo"></use>  
+                    </svg>  
+                </a>
+                </li>
+            </ul>
+        </div>
+        </li>
+     </ul>
+      </div>
+    </section>
+
+    <!--Секція з портфоліо-->
+    <section class="stn-three">
+        <div class="list-container container">
+            <!--Заголовок портфоліо-->
+           <h2 class="level-two-stn-four">Our Portfolio</h2>
+           <ul class="list-service">
+            <li class="service">
+                <div class="bankapp-container">
+                <img src="./images/BankApp.jpg" alt="PhotoBankApp" width="360" class="img-portfolio">
+                <p class="bankapp-prgf">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+            <div class="service-container">
+                <h3 class="level-three-stn-four">Banking App</h3>
+                <p class="prgf-stn-four">App</p>
+            </div>
+            </li>
+            <li class="service">
+                <div class="bankapp-container">
+                <img src="./images/Cashless.jpg" alt="Cashless" width="360" class="img-portfolio">
+                <p class="bankapp-prgf">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+            <div class="service-container">
+                <h3 class="level-three-stn-four">Cashless Payment</h3>
+                <p class="prgf-stn-four">Marketing</p>
+            </div>
+            </li>
+            <li class="service">
+                <div class="bankapp-container">
+                <img src="./images/Meditation.jpg" alt="Meditation" width="360" class="img-portfolio">
+                <p class="bankapp-prgf">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+            <div class="service-container">
+                <h3 class="level-three-stn-four">Meditation App</h3> 
+                <p class="prgf-stn-four">App</p>
+            </div>
+            </li>
+            <li class="service">
+                <div class="bankapp-container">
+                <img src="./images/Taxi.jpg" alt="Texi" width="360" class="img-portfolio">
+                <p class="bankapp-prgf">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+            <div class="service-container">
+                <h3 class="level-three-stn-four">Taxi Service</h3>
+                <p class="prgf-stn-four">Marketing</p>
+            </div>
+            </li>
+            <li class="service"> 
+                <div class="bankapp-container">
+                <img src="./images/Screen.jpg" alt="Screen" width="360" class="img-portfolio">
+                <p class="bankapp-prgf">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+            <div class="service-container">
+                <h3 class="level-three-stn-four">Screen Illustrations</h3> 
+                <p class="prgf-stn-four">Design</p>
+            </div>
+            </li>
+            <li class="service">
+                <div class="bankapp-container">
+                <img src="./images/Online.jpg" alt="Online" width="360" class="img-portfolio">
+                <p class="bankapp-prgf">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+                <div class="service-container">
+                    <h3 class="level-three-stn-four">Online Courses</h3>
+                    <p class="prgf-stn-four">Marketing</p>
+                </div>
+            </li> 
+           </ul>
+        </div>
+    </section>
+    </main>
+
+
+     <!--Заключна частина-->
+    <footer class="final-part">
+    <div class="fnlprt-container container">
+        <div class="std-info">
+        <div class="logo-text texts"><a href="./index.html" class="logo-foot">Web<span class="logo-two">Studio</span></a></div>
+        <p class="prgf-foot">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        </div>
+        <div class="sclmd-footer">
+        <p class="prgf-sclmd">Social media</p>
+        <ul class="footer-list">
+            <li class="footer-elements">
+            <a class="footer-media" href="https://www.instagram.com/">
+            <svg class="footer-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-logo"></use>  
+            </svg>
+            </a>
+            </li>
+            <li class="footer-elements">
+                <a class="footer-media" href="https://x.com/?lang=uk">
+                <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-logo"></use>  
+                </svg>
+                </a>
+            </li>
+            <li class="footer-elements">
+                <a class="footer-media" href="https://www.facebook.com/?locale2=uk_UA&_rdr">
+                <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-logo"></use>  
+                </svg>
+                </a>
+            </li>
+            <li class="footer-elements">
+                <a class="footer-media" href="https://www.facebook.com/?locale2=uk_UA&_rdr">
+                <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-in-logo"></use>  
+                </svg>
+                </a>
+            </li>
+        </ul>
+        </div>
+        <div class="form-container">
+            <p class="prgf-form">Subscribe</p>
+            <form class="form-active" action="/submit-form">
+                <label class="label-active"> 
+                  <input class="input-active" name ="username" type="email" placeholder="E-mail">
+                </label>
+                <button type="submit" class="button-active">Subscribe
+                  <svg class="btn-svg" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+              </form>
+        </div>
+       </div>
+   </div>
+    </footer>
+
+
+    <div class="modal-window-container">
+        <div class="modal-window">
+            <button class="btn-modal-window" type="button">
+                <svg class="svg-btn-modal-window" width="8" height="8">
+                    <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        <p class="prgf-modal-window">Leave your contacts and we will call you back</p>
+        <form>
+            <div class="input-wrapper">
+                <label class="label-name" for="user-name">Name</label>
+                <div class="icons-input-container">
+                    <input class="input-element" id="user-name" name="user-name" type="text">
+                    <svg class="svg-icons-input" width="18" height="24">
+                       <use href="./images/symbol-defs.svg#icon-user"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <label class="label-name">Phone</label>
+                <div class="icons-input-container">
+                    <input class="input-element" id="user-name-3" name="user-name" type="text">
+                    <svg class="svg-icons-input" width="18" height="24">
+                      <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <label class="label-name">Email</label>
+                <div class="icons-input-container">
+                    <input class="input-element" id="user-name-4" name="user-name" type="text">
+                    <svg class="svg-icons-input" width="18" height="24">
+                       <use href="./images/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="comment-wrapper">
+                <label class="label-name" for="user-comment">Comment</label>
+                <textarea class="textarea-comment" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+            </div>
+            <div class="label-wrapper"> 
+                <input class="input-privacy visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy">
+                <label class="label-user-privacy" for="user-privacy">
+                <span class="span-label">
+                    <svg class="privpolicy" width="10" height="8">
+                      <use href="./images/daw_sprite.svg#icon-daw"></use>
+                    </svg>
+                </span>I accept the terms and conditions of the
+                    <a class="label-link">Privacy Policy</a>
+                </label>
+            </div>
+            <button class="form-btn">Send</button>
+        </form>
+        
+        <script src="./js/modal.js"></script>
+
+        <div class="info-container">
+        <ul>
+            <li class="info-port studio"><a href="./index.html" class="portfolio-info">Studio</a></li>
+            <li class="info-port"><a class="portfolio-info">Portfolio</a></li>
+            <li class="info-cont"><a class="portfolio-info">Contacts</a></li>
+        </ul>
+       </div>
+            <div class="conts">
+            <address>
+                <ul>
+                    <li class="number-info"><a class="number" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="number-info"><a class="email-info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+            </address>
+           </div>
+            <ul class="footer-list">
+                <li class="footer-elements">
+                <a class="footer-media" href="https://www.instagram.com/">
+                <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-logo"></use>  
+                </svg>
+                </a>
+                </li>
+                <li class="footer-elements">
+                    <a class="footer-media" href="https://x.com/?lang=uk">
+                    <svg class="footer-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter-logo"></use>  
+                    </svg>
+                    </a>
+                </li>
+                <li class="footer-elements">
+                    <a class="footer-media" href="https://www.facebook.com/?locale2=uk_UA&_rdr">
+                    <svg class="footer-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook-logo"></use>  
+                    </svg>
+                    </a>
+                </li>
+                <li class="footer-elements">
+                    <a class="footer-media" href="https://www.facebook.com/?locale2=uk_UA&_rdr">
+                    <svg class="footer-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-in-logo"></use>  
+                    </svg>
+                    </a>
+                </li>
+            </ul>
+       </div>
+    </div>
+</body>
+</html>
